@@ -35,7 +35,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v5
       with:
-        images: remotely-works/ascode
+        images: ghcr.io/remotely-works/ascode
 
     - name: Build Docker image
       uses: docker/build-push-action@v6

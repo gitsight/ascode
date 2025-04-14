@@ -87,6 +87,8 @@ func client(m discovery.PluginMeta) *plugin.Client {
 
 	cmdArgv := strings.Split(m.Path, command.TFSPACE)
 
+	fmt.Println("CLIENT", cmdArgv[0], cmdArgv[1:])
+
 	return plugin.NewClient(&plugin.ClientConfig{
 		Cmd:              exec.Command(cmdArgv[0], cmdArgv[1:]...),
 		HandshakeConfig:  tfplugin.Handshake,

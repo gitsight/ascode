@@ -9,7 +9,7 @@ inputs:
     description: 'hcl output file'
     required: true
     default: 'generated.tf'
-  pluginDir:
+  plugins:
     description: 'path to plugin dir'
     required: true
 runs:

@@ -39,4 +39,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
 )
 
-replace github.com/hashicorp/hcl2 => github.com/gitsight/hcl2 v0.0.0-20190711172820-dd3dbf62a554
+replace github.com/hashicorp/hcl2 => github.com/mcuadros/hcl2 v0.0.0-20190711172820-dd3dbf62a554

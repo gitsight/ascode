@@ -1,4 +1,4 @@
-FROM remotelyplatform/ascode:latest
+FROM ghcr.io/remotely-works/ascode:latest
 
 LABEL MAINTAINER="Remotely Works <platform@remotely.works>"
 LABEL "com.github.actions.description"="converts starlark files to HCL"

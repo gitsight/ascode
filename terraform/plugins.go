@@ -28,7 +28,7 @@ type PluginManager struct {
 }
 
 // Provider returns a client and the metadata for a given provider and version,
-// first try to locate the provider in the local  path, if not found, it
+// first try to locate the provider in the local path, if not found, it
 // downloads it from terraform registry. If forceLocal just tries to find
 // the binary in the local filesystem.
 func (m *PluginManager) Provider(provider, version string, forceLocal bool) (*plugin.Client, discovery.PluginMeta, error) {

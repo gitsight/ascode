@@ -2,13 +2,13 @@ package types
 
 import (
 	"fmt"
+	"os"
 	"strings"
-
-	"github.com/remotely-works/ascode/terraform"
 
 	"github.com/hashicorp/terraform/plugin"
 	"github.com/hashicorp/terraform/plugin/discovery"
 	"github.com/hashicorp/terraform/providers"
+	"github.com/remotely-works/ascode/terraform"
 	"go.starlark.net/starlark"
 	"go.starlark.net/syntax"
 )
@@ -124,7 +124,10 @@ var _ starlark.Comparable = &Provider{}
 
 // NewProvider returns a new Provider instance from a given type, version and name.
 func NewProvider(pm *terraform.PluginManager, typ, version, name string, cs starlark.CallStack) (*Provider, error) {
-	cli, meta, err := pm.Provider(typ, version, false)
+	forceLocalEnv := strings.TrimSpace(os.Getenv("ASCODE_PROVIDER_FORCE_LOCAL"))
+	forceLocal := strings.EqualFold(forceLocalEnv, "true") || forceLocalEnv == "1" || false
+
+	cli, meta, err := pm.Provider(typ, version, forceLocal)
 	if err != nil {
 		return nil, err
 	}

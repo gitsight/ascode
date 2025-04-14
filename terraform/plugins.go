@@ -87,6 +87,8 @@ func client(m discovery.PluginMeta) *plugin.Client {
 
 	cmdArgv := strings.Split(m.Path, command.TFSPACE)
 
+	fmt.Println("CLIENT", cmdArgv[0], cmdArgv[1:])
+
 	return plugin.NewClient(&plugin.ClientConfig{
 		Cmd:              exec.Command(cmdArgv[0], cmdArgv[1:]...),
 		HandshakeConfig:  tfplugin.Handshake,
@@ -193,7 +195,12 @@ func (m *PluginManager) getProviderRemote(provider, v string) (discovery.PluginM
 }
 
 func (m *PluginManager) getLocal(kind, provider, version string) (discovery.PluginMeta, bool) {
+	fmt.Println("GET LOCAL", kind, provider, version)
 	set := discovery.FindPlugins(kind, []string{m.Path})
+	fmt.Println("FOUND", set.Count())
+	for m := range set {
+		fmt.Println("-", m.Name, m.Path, m.Version)
+	}
 	set = set.WithName(provider)
 	if len(set) == 0 {
 		return discovery.PluginMeta{}, false

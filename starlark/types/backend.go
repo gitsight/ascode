@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
+	"github.com/gitsight/ascode/terraform"
 	"github.com/hashicorp/terraform/addrs"
 	"github.com/hashicorp/terraform/backend"
 	binit "github.com/hashicorp/terraform/backend/init"
@@ -11,7 +12,6 @@ import (
 	"github.com/hashicorp/terraform/states"
 	"github.com/hashicorp/terraform/states/statemgr"
 	"github.com/qri-io/starlib/util"
-	"github.com/remotely-works/ascode/terraform"
 	"go.starlark.net/starlark"
 )
 

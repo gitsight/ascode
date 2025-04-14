@@ -1,18 +1,18 @@
 <p align="center">
-    <img src="https://rawcdn.githack.com/remotely-works/hugo-ascode-theme/58eb37db93a6566800f44a0b488547c5078cc050/static/images/logo.svg" />
+    <img src="https://rawcdn.githack.com/gitsight/hugo-ascode-theme/58eb37db93a6566800f44a0b488547c5078cc050/static/images/logo.svg" />
 </p>
 <p align="center">
-    <a href="https://github.com/remotely-works/ascode/blob/master/LICENSE" target="_blank">
-        <img src="https://img.shields.io/github/license/remotely-works/ascode.svg" alt="GitHub license">
+    <a href="https://github.com/gitsight/ascode/blob/master/LICENSE" target="_blank">
+        <img src="https://img.shields.io/github/license/gitsight/ascode.svg" alt="GitHub license">
     </a>
-    <a href="https://github.com/remotely-works/ascode/releases" target="_blank">
-        <img src="https://img.shields.io/github/tag/remotely-works/ascode.svg" alt="GitHub tag (latest SemVer)">
+    <a href="https://github.com/gitsight/ascode/releases" target="_blank">
+        <img src="https://img.shields.io/github/tag/gitsight/ascode.svg" alt="GitHub tag (latest SemVer)">
     </a>
-    <a href="https://github.com/remotely-works/ascode/actions?query=workflow%3ATest" target="_blank">
-        <img src="https://img.shields.io/github/workflow/status/remotely-works/ascode/Test.svg" alt="GitHub Action Test">
+    <a href="https://github.com/gitsight/ascode/actions?query=workflow%3ATest" target="_blank">
+        <img src="https://img.shields.io/github/workflow/status/gitsight/ascode/Test.svg" alt="GitHub Action Test">
     </a>
-    <a href="https://goreportcard.com/report/github.com/remotely-works/ascode" target="_blank">
-        <img src="https://goreportcard.com/badge/github.com/remotely-works/ascode" alt="Go Report Card">
+    <a href="https://goreportcard.com/report/github.com/gitsight/ascode" target="_blank">
+        <img src="https://goreportcard.com/badge/github.com/gitsight/ascode" alt="Go Report Card">
     </a>
 </p>
 <br/>

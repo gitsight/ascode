@@ -37,7 +37,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: 'AsCode Run'
-        uses: remotelyplatform/ascode@gh-action
+        uses: gitsight/ascode@gh-action
 
       - name: 'Terraform Init'
         uses: hashicorp/terraform-github-actions@master

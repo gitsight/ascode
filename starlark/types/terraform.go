@@ -3,8 +3,8 @@ package types
 import (
 	"fmt"
 
+	"github.com/gitsight/ascode/terraform"
 	"github.com/hashicorp/terraform/version"
-	"github.com/remotely-works/ascode/terraform"
 	"go.starlark.net/starlark"
 )
 

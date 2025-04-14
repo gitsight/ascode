@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/remotely-works/ascode/starlark/runtime"
-	"github.com/remotely-works/ascode/terraform"
+	"github.com/gitsight/ascode/starlark/runtime"
+	"github.com/gitsight/ascode/terraform"
 )
 
 func init() {

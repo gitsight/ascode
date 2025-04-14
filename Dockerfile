@@ -1,6 +1,6 @@
 FROM golang:1-alpine AS builder
 RUN apk --no-cache add make
-WORKDIR $GOPATH/src/github.com/remotely-works/ascode
+WORKDIR $GOPATH/src/github.com/gitsight/ascode
 COPY . .
 RUN GO111MODULE=on CGO_ENABLED=0 GOPROXY="https://proxy.golang.org" \
     go build \

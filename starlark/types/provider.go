@@ -5,10 +5,10 @@ import (
 	"os"
 	"strings"
 
+	"github.com/gitsight/ascode/terraform"
 	"github.com/hashicorp/terraform/plugin"
 	"github.com/hashicorp/terraform/plugin/discovery"
 	"github.com/hashicorp/terraform/providers"
-	"github.com/remotely-works/ascode/terraform"
 	"go.starlark.net/starlark"
 	"go.starlark.net/syntax"
 )

@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
+	"github.com/gitsight/ascode/cmd"
 	"github.com/jessevdk/go-flags"
-	"github.com/remotely-works/ascode/cmd"
 )
 
 var version string

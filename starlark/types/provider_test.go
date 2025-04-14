@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/remotely-works/ascode/starlark/module/os"
-	"github.com/remotely-works/ascode/starlark/test"
-	"github.com/remotely-works/ascode/terraform"
+	"github.com/gitsight/ascode/starlark/module/os"
+	"github.com/gitsight/ascode/starlark/test"
+	"github.com/gitsight/ascode/terraform"
 	"go.starlark.net/resolve"
 	"go.starlark.net/starlark"
 	"go.starlark.net/starlarkstruct"

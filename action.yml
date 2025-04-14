@@ -9,6 +9,9 @@ inputs:
     description: 'hcl output file'
     required: true
     default: 'generated.tf'
+  pluginDir:
+    description: 'path to plugin dir'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
